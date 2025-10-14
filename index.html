@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Лэндинг &quot;Премиум-ExpressMobile&quot;</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Mobile Premium - Премиальная связь для бизнеса</title>
+    <meta name="description" content="Премиальная мобильная связь с выделенным менеджером, безлимитным интернетом по всему миру и eSIM для бизнеса">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading State -->
+    <div class="loading-state" id="loadingState">
+        <div class="loading-spinner"></div>
+        <span class="sr-only">Загрузка страницы...</span>
+    </div>
+
+    <!-- Skip to main content -->
+    <a href="#main-content" class="skip-link">Перейти к основному содержанию</a>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="background-overlay"></div>
+            <div class="animated-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            <div class="particles-field"></div>
+            
+            <!-- Luxury Background Images -->
+            <div class="luxury-slideshow">
+                <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2100&q=80')"></div>
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=2100&q=80')"></div>
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2100&q=80')"></div>
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=2100&q=80')"></div>
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-4.0.3&auto=format&fit=crop&w=2100&q=80')"></div>
+            </div>
+        </div>
+        
+        <!-- Navigation -->
+        <header class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="#hero" class="logo-link">
+                        <span class="logo-text">Express Mobile </span>
+                        <span class="logo-badge">Premium</span>
+                    </a>
+                </div>
+                
+                <nav class="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#features" class="nav-link">Преимущества</a></li>
+                        <li class="nav-item"><a href="#tariffs" class="nav-link">Тарифы</a></li>
+                        <li class="nav-item"><a href="#esim" class="nav-link">eSIM</a></li>
+                        <li class="nav-item"><a href="#numbers" class="nav-link">Красивые номера</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <div class="nav-actions">
+                    <button class="nav-button primary cta-gold-animation" id="nav-cta">
+                        <span>Подключиться</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Hero Content -->
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="content-wrapper">
+                    <div class="badge-container">
+                        <span class="premium-badge">
+                            <i class="fas fa-crown"></i>
+                            Премиум сегмент
+                        </span>
+                    </div>
+                    
+                    <div class="heading-group">
+                        <h1 class="hero-title">
+                            <span class="title-line">Express Mobile</span>
+                            <span class="title-accent">Premium</span>
+                        </h1>
+                        
+                        <p class="hero-subtitle">
+                            Связь, которая работает там, где вы принимаете решения. 
+                            <span class="subtitle-highlight">Ваш личный оператор связи.</span>
+                        </p>
+                    </div>
+                    
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="feature-title">Ваш персональный менеджер 24/7</h3>
+                                <p class="feature-description">Персональное обслуживание без ожидания в очередях</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-globe-americas"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="feature-title">Безлимитный интернет по всему миру</h3>
+                                <p class="feature-description">Работайте и путешествуйте без ограничений</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-sim-card"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="feature-title">eSIM для решения бизнес-задач</h3>
+                                <p class="feature-description">Европейский номер для международных сервисов</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-actions">
+                        <button class="cta-button primary cta-gold-animation" id="cta-main">
+                            <span class="button-content">
+                                <span>Подключиться</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </button>
+                        
+                        <button class="cta-button secondary" id="cta-learn-more">
+                            <span class="button-content">
+                                <i class="fas fa-play-circle"></i>
+                                <span>Узнать больше</span>
+                            </span>
+                        </button>
+                    </div>
+
+                    <!-- Trust Indicators -->
+                    <div class="trust-indicators">
+                        <div class="trust-item">
+                            <div class="trust-number">24/7</div>
+                            <div class="trust-label">Поддержка</div>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-number">100%</div>
+                            <div class="trust-label">Покрытие в РФ</div>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-number">4.9★</div>
+                            <div class="trust-label">Рейтинг клиентов</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="phone-mockup-container">
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <div class="screen-content">
+                                    <div class="app-header">
+                                        <div class="signal-bars">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <span class="operator">Express Mobile</span>
+                                        <div class="battery">
+                                            <div class="battery-level"></div>
+                                        </div>
+                                    </div>
+                                    <div class="call-interface">
+                                        <div class="caller-info">
+                                            <div class="caller-avatar">
+                                                <i class="fas fa-user-tie"></i>
+                                            </div>
+                                            <h3 class="caller-name">Ваш персональный менеджер</h3>
+                                            <p class="caller-number">+7 (999)-999-99-99</p>
+                                            <p class="caller-role">Алла всегда на связи</p>
+                                        </div>
+                                        <div class="call-actions">
+                                            <button class="call-btn decline">
+                                                <i class="fas fa-phone-slash"></i>
+                                            </button>
+                                            <button class="call-btn accept call-btn-vibrate" id="accept-call">
+                                                <i class="fas fa-phone"></i>
+                                                <div class="call-waves">
+                                                    <div class="wave"></div>
+                                                    <div class="wave"></div>
+                                                    <div class="wave"></div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phone-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <a href="#features" class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Gold Separator -->
+    <div class="gold-separator"></div>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="section-overlay"></div>
+        <div class="container">
+            <header class="section-header">
+                <span class="section-badge">Преимущества</span>
+                <h2 class="section-title">Почему клиенты выбирают Express Mobile Premium</h2>
+                <p class="section-subtitle">Комплексное решение для тех, кто ценит надежность и персональный подход</p>
+            </header>
+
+            <div class="features-grid">
+                <article class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-satellite"></i>
+                    </div>
+                    <h3 class="feature-card-title">Качественная связь и покрытие</h3>
+                    <p class="feature-card-description">Бесперебойная связь и высокоскоростной 4G интернет на всей территории РФ</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h3 class="feature-card-title">Data-безлимиты</h3>
+                    <p class="feature-card-description">Соцсети, мессенджеры и видео без ограничений. Экономьте на главном</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3 class="feature-card-title">Роуминг как дома</h3>
+                    <p class="feature-card-description">Путешествуйте по миру без лишних затрат. Пакеты гигабайтов включены в тариф</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3 class="feature-card-title">eSIM ЕС</h3>
+                    <p class="feature-card-description">Получите европейский номер для регистрации в любых сервисах</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-card-title">Safety Services</h3>
+                    <p class="feature-card-description">Максимальная защита от спама, мошенников и угроз</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="feature-card-title">Оптимальные тарифы</h3>
+                    <p class="feature-card-description">Гибкие условия для бизнеса и персонального использования</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gold Separator -->
+    <div class="gold-separator"></div>
+
+    <!-- Beautiful Numbers Section -->
+    <section id="numbers" class="numbers-section">
+        <div class="section-overlay"></div>
+        <div class="container">
+            <header class="section-header">
+                <span class="section-badge">Эксклюзив</span>
+                <h2 class="section-title">Красивые номера</h2>
+                <p class="section-subtitle">Статусные номера для деловых людей и коллекционеров</p>
+            </header>
+
+            <div class="numbers-showcase-horizontal">
+                <div class="number-cards-grid">
+                    <div class="number-card business">
+                        <div class="number-card-header">
+                            <i class="fas fa-briefcase"></i>
+                            <h3>Бизнес номер</h3>
+                        </div>
+                        <div class="number-card-content">
+                            <div class="number-display">+7 (999) 700-00-01</div>
+                            <div class="number-price">8 000 ₽</div>
+                            <ul class="number-benefits">
+                                <li><i class="fas fa-check"></i> Профессиональный имидж</li>
+                                <li><i class="fas fa-check"></i> Узнаваемость бренда</li>
+                                <li><i class="fas fa-check"></i> Доверие клиентов</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="number-card premium">
+                        <div class="number-card-header">
+                            <i class="fas fa-crown"></i>
+                            <h3>Золотой номер</h3>
+                        </div>
+                        <div class="number-card-content">
+                            <div class="number-display">+7 (999) 777-77-77</div>
+                            <div class="number-price">25 000 ₽</div>
+                            <ul class="number-benefits">
+                                <li><i class="fas fa-check"></i> Премиальный статус</li>
+                                <li><i class="fas fa-check"></i> Легко запомнить</li>
+                                <li><i class="fas fa-check"></i> Инвестиционная ценность</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="number-card vip">
+                        <div class="number-card-header">
+                            <i class="fas fa-gem"></i>
+                            <h3>VIP номер</h3>
+                        </div>
+                        <div class="number-card-content">
+                            <div class="number-display">+7 (999) 888-88-88</div>
+                            <div class="number-price">35 000 ₽</div>
+                            <ul class="number-benefits">
+                                <li><i class="fas fa-check"></i> Эксклюзивный статус</li>
+                                <li><i class="fas fa-check"></i> Идеальная комбинация</li>
+                                <li><i class="fas fa-check"></i> Быстрая окупаемость</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="numbers-benefits-combined">
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Уникальный статус</h4>
+                            <p>Подчеркните ваш успешный имидж красивым номером</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Легко запомнить</h4>
+                            <p>Клиенты всегда смогут вас найти и запомнить номер</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Инвестиция в будущее</h4>
+                            <p>Ценные номера со временем только дорожают</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="numbers-actions">
+                <button class="cta-button primary cta-gold-animation" id="numbers-cta">
+                    <span class="button-content">
+                        <span>Подобрать номер</span>
+                        <i class="fas fa-search"></i>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gold Separator -->
+    <div class="gold-separator"></div>
+
+    <!-- Tariffs Section -->
+    <section id="tariffs" class="tariffs-section">
+        <div class="section-overlay"></div>
+        <div class="container">
+            <header class="section-header">
+                <span class="section-badge">Тарифы</span>
+                <h2 class="section-title">Выберите свой уровень свободы</h2>
+                <p class="section-subtitle">Индивидуальные решения для разных потребностей</p>
+            </header>
+
+            <div class="tariffs-grid">
+                <article class="tariff-card">
+                    <div class="tariff-header">
+                        <h3 class="tariff-name">PREMIUM</h3>
+                        <div class="tariff-price">
+                            <span class="price-amount">2 000</span>
+                            <span class="price-currency">руб./мес.</span>
+                        </div>
+                    </div>
+
+                    <div class="tariff-features">
+                        <ul class="features-list">
+                            <li class="feature-included">
+                                <i class="fas fa-check"></i>
+                                <span>БЕЗЛИМИТ ГБ в РФ</span>
+                            </li>
+                            <li class="feature-included">
+                                <i class="fas fa-check"></i>
+                                <span>2 000 минут на номера России</span>
+                            </li>
+                            <li class="feature-included">
+                                <i class="fas fa-check"></i>
+                                <span>Пакет роуминга «За границей» - 10ГБ/мес.</span>
+                            </li>
+                            <li class="feature-included">
+                                <i class="fas fa-check"></i>
+                                <span>Safety-сервисы</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tariff-actions">
+                        <button class="tariff-button" data-tariff="premium">
+                            Выбрать тариф
+                        </button>
+                    </div>
+                </article>
+
+                <article class="tariff-card featured">
+                    <div class="tariff-badge">Рекомендуем</div>
+                    <div class="tariff-header">
+                        <h3 class="tariff-name">EXCLUSIVE</h3>
+                        <div class="tariff-price">
+                            <span class="price-amount">12 000</span>
+                            <span class="price-currency">руб./мес.</span>
+                        </div>
+                    </div>
+
+                    <div class="tariff-features">
+                        <ul class="features-list">
+                            <li class="feature-included">
+                                <i class="fas fa-check"></i>
+                                <span>БЕЗЛИМИТ ГБ ПО ВСЕМУ МИРУ</span>
+                            </li>
+                            <li class="feature-included">
+                                <i class="fas fa-check"></i>
+                                <span>БЕЗЛИМИТ МИНУТ</span>
+                            </li>
+                            <li class="feature-included">
+                                <i class="fas fa-check"></i>
+                                <span>БЕЗЛИМИТ SMS</span>
+                            </li>
+                            <li class="feature-included">
+                                <i class="fas fa-check"></i>
+                                <span>Все Safety-сервисы</span>
+                            </li>
+                            <li class="feature-included">
+                                <i class="fas fa-check"></i>
+                                <span>Все безлимиты на соцсети и видео</span>
+                            </li>
+                            <li class="feature-included">
+                                <i class="fas fa-check"></i>
+                                <span>ДОПОЛНИТЕЛЬНЫЙ НОМЕР ЕС</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tariff-actions">
+                        <button class="tariff-button primary cta-gold-animation" data-tariff="exclusive">
+                            Выбрать тариф
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gold Separator -->
+    <div class="gold-separator"></div>
+
+    <!-- eSIM Section -->
+    <section id="esim" class="esim-section">
+        <div class="section-overlay"></div>
+        <div class="container">
+            <div class="esim-grid">
+                <div class="esim-content">
+                    <header class="section-header">
+                        <span class="section-badge">Технология</span>
+                        <h2 class="section-title">Международная eSIM</h2>
+                        <p class="section-subtitle">Ваш цифровой пропуск в мир безграничных возможностей</p>
+                    </header>
+
+                    <div class="esim-features">
+                        <div class="esim-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Официально оформленная eSIM оператора ЕС</h3>
+                                <p>Легальный номер европейского оператора для бизнеса и путешествий</p>
+                            </div>
+                        </div>
+
+                        <div class="esim-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Регистрация в санкционных сервисах</h3>
+                                <p>Полный доступ к WhatsApp, Telegram, Airbnb и другим международным платформам</p>
+                            </div>
+                        </div>
+
+                        <div class="esim-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Защита личных данных</h3>
+                                <p>Анонимность и безопасность ваших персональных данных</p>
+                            </div>
+                        </div>
+
+                        <div class="esim-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Резервный канал связи</h3>
+                                <p>Работает даже при блокировке основного номера</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="esim-actions">
+                        <button class="cta-button primary cta-gold-animation" id="esim-cta">
+                            <span class="button-content">
+                                <span>Получить eSIM</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="esim-visual">
+                    <img src="https://thumbs.dreamstime.com/b/globe-adorned-gold-leaf-rests-rock-symbolizing-exploration-luxury-373964673.jpg" alt="Международный глобус" class="globe-image">
+                    <div class="esim-card-container">
+                        <div class="esim-card premium-esim">
+                            <div class="esim-chip">
+                                <div class="chip-lines"></div>
+                            </div>
+                            <div class="esim-info">
+                                <div class="esim-operator">Express Mobile EU</div>
+                                <div class="esim-number">+49 777 888 999</div>
+                                <div class="esim-type">eSIM Digital</div>
+                            </div>
+                            <div class="esim-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gold Separator -->
+    <div class="gold-separator"></div>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta-section">
+        <div class="section-overlay"></div>
+        <div class="container">
+            <div class="cta-content">
+                <header class="cta-header">
+                    <h2 class="cta-title">Готовы вывести вашу связь на новый уровень?</h2>
+                    <p class="cta-subtitle">Оставьте заявку, и ваш персональный менеджер поможет подобрать идеальное решение</p>
+                </header>
+
+                <form class="contact-form" id="contact-form" novalidate>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="user-name" class="form-label">Имя</label>
+                            <input type="text" id="user-name" name="name" class="form-input" required 
+                                   placeholder="Ваше имя">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="user-phone" class="form-label">Телефон</label>
+                            <input type="tel" id="user-phone" name="phone" class="form-input" required 
+                                   placeholder="+7 (___) ___-__-__">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="user-tariff" class="form-label">Интересует</label>
+                            <select id="user-tariff" name="tariff" class="form-select">
+                                <option value="premium">Тариф PREMIUM</option>
+                                <option value="exclusive">Тариф EXCLUSIVE</option>
+                                <option value="esim">Только eSIM</option>
+                                <option value="numbers">Красивый номер</option>
+                                <option value="consultation">Консультация</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <button type="submit" class="submit-button cta-gold-animation" id="form-submit">
+                                <span class="button-text">Отправить заявку</span>
+                                <span class="button-loader"></span>
+                            </button>
+                            <p class="form-note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-overlay"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">Express Mobile </span>
+                        <span class="logo-badge">Premium</span>
+                    </div>
+                    <p class="footer-description">
+                        Премиальная мобильная связь для тех, кто ценит качество и надежность
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3 class="footer-title">Продукты</h3>
+                        <ul class="footer-list">
+                            <li><a href="#tariffs" class="footer-link">Тарифы</a></li>
+                            <li><a href="#esim" class="footer-link">eSIM</a></li>
+                            <li><a href="#numbers" class="footer-link">Красивые номера</a></li>
+                            <li><a href="#features" class="footer-link">Преимущества</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3 class="footer-title">Поддержка</h3>
+                        <ul class="footer-list">
+                            <li><a href="tel:+78001234567" class="footer-link">8 (800) 123-45-67</a></li>
+                            <li><a href="mailto:support@expressmobile.ru" class="footer-link">support@expressmobile.ru</a></li>
+                            <li><a href="#" class="footer-link">Помощь</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3 class="footer-title">Компания</h3>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">О нас</a></li>
+                            <li><a href="#" class="footer-link">Контакты</a></li>
+                            <li><a href="#" class="footer-link">Документы</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2024 Express Mobile. Все права защищены.</p>
+                <div class="footer-legal">
+                    <a href="#" class="footer-legal-link">Политика конфиденциальности</a>
+                    <a href="#" class="footer-legal-link">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Floating CTA -->
+    <div class="sticky-cta" id="stickyCta">
+        <button class="cta-button primary cta-gold-animation" id="sticky-cta-button">
+            <span class="button-content">
+                <span>Подключиться сейчас</span>
+                <i class="fas fa-chevron-right"></i>
+            </span>
+        </button>
+    </div>
+
+    <!-- Connection Modal -->
+    <div class="modal" id="connectionModal">
+        <div class="modal-backdrop" data-modal-close></div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 class="modal-title">Подключение Express Mobile Premium</h3>
+                <button class="modal-close" data-modal-close>
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Modal content will be injected here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
