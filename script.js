@@ -62,7 +62,14 @@ class LandingManager {
         this.elements.scrollArrow?.addEventListener('click', this.scrollToFeatures.bind(this));
 
         // Call button - direct to form
-        this.elements.acceptCall?.addEventListener('click', this.handlePrimaryCTA.bind(this));
+        if (this.elements.acceptCall) {
+            this.elements.acceptCall.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                console.log('Accept call button clicked - opening modal');
+                this.handlePrimaryCTA(e);
+            });
+        }
 
         // Tariff buttons
         this.elements.tariffButtons.forEach(btn => {
@@ -466,32 +473,6 @@ class LandingManager {
                 }
             }
         }
-    }
-
-    trapFocus(modal) {
-        const focusableElements = modal.querySelectorAll(
-            'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
-        );
-        const firstElement = focusableElements[0];
-        const lastElement = focusableElements[focusableElements.length - 1];
-
-        modal.addEventListener('keydown', (e) => {
-            if (e.key !== 'Tab') return;
-
-            if (e.shiftKey) {
-                if (document.activeElement === firstElement) {
-                    e.preventDefault();
-                    lastElement.focus();
-                }
-            } else {
-                if (document.activeElement === lastElement) {
-                    e.preventDefault();
-                    firstElement.focus();
-                }
-            }
-        });
-
-        firstElement.focus();
     }
 
     throttle(func, limit) {
